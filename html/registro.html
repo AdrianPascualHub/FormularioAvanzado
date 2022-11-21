@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -15,11 +16,13 @@
     </header>
     <aside class="as">
         <div class="a">
-            <form action="" id="favanzado" class="formulario">
+            <form id="favanzado" class="formulario" action="prueba.html">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre"><br>
+                <span id="errornom">Formato incorrecto</span>
                 <label for="apellidos">Apellidos:</label><br>
                 <input type="text" id="apellidos" name="apellidos"><br>
+                <span id="errorap">Formato incorrecto</span>
                 <label for="socio">Tipo Socio:</label><br>
                 <select required name="socio" class="form-control">
                     <option value="">Elige tipo de Socio</option>
@@ -29,10 +32,12 @@
                 </select><input type="button" onclick="location.href='ayuda.html';" value="Mas Informacion" /><br>
                 <label for="dni">DNI:</label><br>
                 <input type="text" id="dni" name="dni"><br>
+                <span id="errordni">Formato incorrecto</span>
                 <label for="fecnac">Fecha Nacimiento:</label><br>
                 <input type="date" id="fecnac" name="fecnac"><br>
                 <label for="dir">Direccion:</label><br>
                 <input type="text" id="dir" name="dir"><br>
+                <span id="errordir">Formato incorrecto</span>
                 <label for="prov">Provincia:</label><br>
                 <select required name="provincia" class="form-control">
                     <option value="">Elige Provincia</option>
@@ -91,9 +96,11 @@
                 </select><br>
                 <label for="email">Correo:</label><br>
                 <input type="text" id="email" name="email"><br>
+                <span id="errorem">Formato incorrecto</span>
                 <label for="tlf">Telefono:</label><br>
                 <input type="tel" id="tlf" name="tlf"> <br><br>
-                <input type="submit" id="submit" value="Enviar">
+                <span id="errortlf">Formato incorrecto</span>
+                <input type="submit" id="submit" value="Enviar" disabled onclick="passvalues();">
             </form>
         </div>
     </aside>
@@ -101,8 +108,21 @@
         <p>Hace 13 años fuimos los responsables de poner las primeras piedras en el sector de los esports en España.
             Nadie podría imaginar que estábamos construyendo un lugar en donde los sueños se cumplen, donde haríamos
             felices a miles de personas, un lugar donde poder emocionarse por nuestros logros y caídas.</p>
+        <P>PasKuaL es ante todo un club referente en inclusión y diversidad, comprometido y con valores, pero no por
+            ello descuida su vertiente competitiva, manteniéndose en la élite deportiva desde su creación y siendo
+            pionero en la competición internacional. Allá donde un jugador porte la marca PasKuaL, será reconocido y
+            respetado, desde Madrid a Hong Kong.</P>
+        <p>
+            El nacimiento de la nueva comunidad , con ello, de la identidad única del fan dentro del
+            ecosistema digital de PasKuaL, se enmarca dentro de una serie de nuevos proyectos basados en una
+            apuesta firme por la digitalización, el big data y la inteligencia artificial, y que se irán poniendo en
+            marcha con el objetivo de que todos los aficionados puedan disfrutar de una relación más estrecha con el
+            club y entre los mismos seguidores.
+        </p>
+        <img src="../fotos/asa.png"><br><br>
+        <a href="login.html">¿ESTAS REGISTRADO YA?</a>
     </aside>
-    <script src="registro.js"></script>
+    <script src="../js/registro.js"></script>
 </body>
 
 </html>

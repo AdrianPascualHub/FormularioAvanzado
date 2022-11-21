@@ -1,5 +1,5 @@
 body {
-    background-image: url("/fotos/aa.jpg");
+    background-image: url("../fotos/aa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -7,9 +7,12 @@ body {
 }
 
 header {
-    color: white;
-    padding: 20px;
+    color: rgb(255, 251, 0);
+    padding: 10px;
     border-radius: 20px;
+    padding-left: 100px;
+    font-size: 20px;
+    
 }
 
 .as {
@@ -20,8 +23,11 @@ header {
 }
 
 form {
-    background: rgb(122, 179, 255);
-    padding: 30px;
+    
+    background: rgb(159, 57, 255);
+    padding: 20px;
+    width: 52%;
+    float: right;
     height: 800px;
     border-radius: 20px;
     border-left: 1px solid white;
@@ -29,7 +35,7 @@ form {
     backdrop-filter: blur(10px);
     box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
     text-align: center;
-    position: relative;
+    margin-right: 250px;
 }
 
 input[type=text],
@@ -78,7 +84,7 @@ input[type=submit] {
 
 input[type=button] {
     width: 100%;
-    background-color: #001986;
+    background-color: #2d429c;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -89,7 +95,43 @@ input[type=button] {
 
 aside {
     color: white;
-    width: 40%;
-    padding: 15px;
+    width: 30%;
+    padding: 20px;
     float: left;
+    padding-left: 100px;
+    
+}
+a{
+    color: rgb(255, 255, 0);
+    float: right;
+}
+#errornom{
+    color:red;
+    font-size: 10px;
+    display: none;
+}
+#errorap{
+    color:red;
+    font-size: 10px;
+    display: none;
+}
+#errordir{
+    color:red;
+    font-size: 10px;
+    display: none;
+}
+#errordni{
+    color:red;
+    font-size: 10px;
+    display: none;
+}
+#errorem{
+    color:red;
+    font-size: 10px;
+    display: none;
+}
+#errortlf{
+    color:red;
+    font-size: 10px;
+    display: none;
 }

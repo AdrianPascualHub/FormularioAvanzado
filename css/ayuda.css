@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("/fotos/asdad.png");
+    background-image: url("../fotos/asdad.png");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -48,4 +48,7 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
+  }
+  .q{
+    font-size: 20px;
   }
