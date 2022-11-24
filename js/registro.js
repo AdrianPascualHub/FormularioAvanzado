@@ -16,7 +16,7 @@
 
 
     //Campo nombre
-    if (!nombre.value) {
+    if (nombre.value && apellidos.value && correo.value && telefono.value && dni.value && fnac.value && dir.value) {
         alert("El campo nombre es requerido");
         nombre.focus();
         return false;
@@ -109,92 +109,112 @@ var telefono = document.getElementById("tlf");
 var dni = document.getElementById("dni");
 var fnac = document.getElementById("fecnac");
 var dir = document.getElementById("dir");
-let semaforo = false;
+
 $("#nombre").change(function () {
 
     if (!$("#nombre").val()) {
         $("#errornom").show();
-        semaforo = false;
+        
+        $("#submit").hide();
     } else if (!expRegNombre.exec(nombre.value)) {
         $("#errornom").show();
-        nombre.focus();    
-        semaforo = false;    
+        $("#submit").hide();
+        nombre.focus();
+        
     } else {
         $("#errornom").hide();
-        semaforo = true;
+        ;
     }
 });
 $("#apellidos").change(function () {
 
     if (!$("#apellidos").val()) {
         $("#errorap").show();
-        semaforo = false; 
-    } else if(!expRegApellidos.exec(apellidos.value)){
+        $("#submit").hide();
+        
+    } else if (!expRegApellidos.exec(apellidos.value)) {
         $("#errorap").show();
-        semaforo = false; 
-        apellidos.focus(); 
+        $("#submit").hide();
+        
+        apellidos.focus();
     } else {
         $("#errorap").hide();
-        semaforo = true;        
+        
     }
 });
 $("#dni").change(function () {
 
     if (!$("#dni").val()) {
         $("#errordni").show();
-        semaforo = false; 
-    } else if (!expRegDni.exec(dni.value)){
+        $("#submit").hide();
+        
+    } else if (!expRegDni.exec(dni.value)) {
         $("#errordni").show();
-        semaforo = false; 
+        
+        $("#submit").hide();
         dni.focus();
     } else {
         $("#errordni").hide();
-        semaforo = true;    
+       
     }
 });
 $("#dir").change(function () {
 
     if (!$("#dir").val()) {
         $("#errordir").show();
-        semaforo = false; 
+        $("#submit").hide();
+        
     } else {
         $("#errordir").hide();
-        semaforo = true;    
+        
+    }
+});
+$("#fecnac").change(function () {
+
+    if (!$("#fecnac").val()) {
+        $("#errorfecnac").show();
+        $("#submit").hide();
+        
+    } else {
+        $("#errorfecnac").hide();
+        
     }
 });
 $("#email").change(function () {
 
     if (!$("#email").val()) {
         $("#errorem").show();
-        semaforo = false; 
-    } else if(!expRegCorreo.exec(correo.value)) {
+        $("#submit").hide();
+        
+    } else if (!expRegCorreo.exec(correo.value)) {
         $("#errorem").show();
         correo.focus();
-        semaforo = false; 
+        $("#submit").hide();
+        
     } else {
         $("#errorem").hide();
-        semaforo = true;    
+       
     }
 });
 $("#tlf").change(function () {
 
     if (!$("#tlf").val()) {
         $("#errortlf").show();
-        semaforo = false; 
-    } else if(!expRegTelefono.exec(telefono.value)) {
+        $("#submit").hide();
+        
+    } else if (!expRegTelefono.exec(telefono.value)) {
         $("#errortlf").show();
+        $("#submit").hide();
         telefono.focus();
-        semaforo = false; 
+        
     } else {
-        $("#errortlf").hide();   
-        semaforo = true;         
+        $("#errortlf").hide();
+        
+        //$("#submit").show();
     }
 });
-function passvalues(){
-    var nombre=document.getElementById("nombre").value;
-    localStorage.setItem("text",nombre);
+function passvalues() {
+    var nombre = document.getElementById("nombre").value;
+    localStorage.setItem("text", nombre);
     return false;
-}
-if(semaforo==true){
-    $("#submit").prop('disabled', false)
 }

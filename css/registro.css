@@ -80,6 +80,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: none;
 }
 
 input[type=button] {
@@ -131,6 +132,11 @@ a{
     display: none;
 }
 #errortlf{
+    color:red;
+    font-size: 10px;
+    display: none;
+}
+#errorfecnac{
     color:red;
     font-size: 10px;
     display: none;

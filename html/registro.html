@@ -18,7 +18,7 @@
         <div class="a">
             <form id="favanzado" class="formulario" action="prueba.html">
                 <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br>
+                <input type="text" id="nombre" name="nombre" required><br>
                 <span id="errornom">Formato incorrecto</span>
                 <label for="apellidos">Apellidos:</label><br>
                 <input type="text" id="apellidos" name="apellidos"><br>
@@ -35,6 +35,7 @@
                 <span id="errordni">Formato incorrecto</span>
                 <label for="fecnac">Fecha Nacimiento:</label><br>
                 <input type="date" id="fecnac" name="fecnac"><br>
+                <span id="errorfecnac">Formato incorrecto</span>
                 <label for="dir">Direccion:</label><br>
                 <input type="text" id="dir" name="dir"><br>
                 <span id="errordir">Formato incorrecto</span>
@@ -100,7 +101,7 @@
                 <label for="tlf">Telefono:</label><br>
                 <input type="tel" id="tlf" name="tlf"> <br><br>
                 <span id="errortlf">Formato incorrecto</span>
-                <input type="submit" id="submit" value="Enviar" disabled onclick="passvalues();">
+                <input type="submit" id="submit" value="Enviar" onclick="passvalues();">
             </form>
         </div>
     </aside>
