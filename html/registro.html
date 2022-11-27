@@ -16,31 +16,31 @@
     </header>
     <aside class="as">
         <div class="a">
-            <form id="favanzado" class="formulario" action="prueba.html">
+            <form id="favanzado" class="formulario" action="inicio.html">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre" required><br>
                 <span id="errornom">Formato incorrecto</span>
                 <label for="apellidos">Apellidos:</label><br>
-                <input type="text" id="apellidos" name="apellidos"><br>
+                <input type="text" id="apellidos" name="apellidos" required><br>
                 <span id="errorap">Formato incorrecto</span>
                 <label for="socio">Tipo Socio:</label><br>
-                <select required name="socio" class="form-control">
+                <select required name="soc" id="soc" class="form-control">
                     <option value="">Elige tipo de Socio</option>
-                    <option value="rojo">Completo</option>
-                    <option value="blanco">Blanco</option>
-                    <option value="completo">Rojo</option>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Completo">Completo</option>
                 </select><input type="button" onclick="location.href='ayuda.html';" value="Mas Informacion" /><br>
                 <label for="dni">DNI:</label><br>
-                <input type="text" id="dni" name="dni"><br>
+                <input type="text" id="dni" name="dni" required><br>
                 <span id="errordni">Formato incorrecto</span>
                 <label for="fecnac">Fecha Nacimiento:</label><br>
-                <input type="date" id="fecnac" name="fecnac"><br>
+                <input type="date" id="fecnac" name="fecnac" required><br>
                 <span id="errorfecnac">Formato incorrecto</span>
                 <label for="dir">Direccion:</label><br>
-                <input type="text" id="dir" name="dir"><br>
+                <input type="text" id="dir" name="dir" required><br>
                 <span id="errordir">Formato incorrecto</span>
                 <label for="prov">Provincia:</label><br>
-                <select required name="provincia" class="form-control">
+                <select required name="prov" id="prov" class="form-control">
                     <option value="">Elige Provincia</option>
                     <option value="Álava/Araba">Álava/Araba</option>
                     <option value="Albacete">Albacete</option>
@@ -96,12 +96,12 @@
                     <option value="Zaragoza">Zaragoza</option>
                 </select><br>
                 <label for="email">Correo:</label><br>
-                <input type="text" id="email" name="email"><br>
+                <input type="text" id="email" name="email" required><br>
                 <span id="errorem">Formato incorrecto</span>
                 <label for="tlf">Telefono:</label><br>
-                <input type="tel" id="tlf" name="tlf"> <br><br>
+                <input type="tel" id="tlf" name="tlf" required> <br><br>
                 <span id="errortlf">Formato incorrecto</span>
-                <input type="submit" id="submit" value="Enviar" onclick="passvalues();">
+                <input type="submit" id="submit" value="Enviar" >
             </form>
         </div>
     </aside>
@@ -121,7 +121,7 @@
             club y entre los mismos seguidores.
         </p>
         <img src="../fotos/asa.png"><br><br>
-        <a href="login.html">¿ESTAS REGISTRADO YA?</a>
+        
     </aside>
     <script src="../js/registro.js"></script>
 </body>

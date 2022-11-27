@@ -6,30 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
-<body>
-    <div>
-        <ul id="listuser">
-            <h3> All users here: </h3>
-        </ul>
-    </div>
+<body>   
 
-    <form onsubmit="return false">
+    <form onsubmit="return false" class="formu">       
+            <P>Introduce tu nombre y email para ver tus datos</P>
+            <label for="nombre"><b>Nombre</b></label>
+            <input type="text"  id="nombre" name="nombre" required>
 
-        <div class="container">
-
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text"  id="email" name="email" required>
 
             <button type="submit" onclick="Login()">Login</button>
 
-        </div>
+        
     </form>
 </body>
-
+<script src="../js/login.js"></script>
 </html>

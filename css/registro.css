@@ -108,36 +108,41 @@ a{
 }
 #errornom{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
     display: none;
 }
 #errorap{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
     display: none;
 }
 #errordir{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
     display: none;
 }
 #errordni{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
     display: none;
 }
 #errorem{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
     display: none;
 }
 #errortlf{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
     display: none;
 }
 #errorfecnac{
     color:red;
-    font-size: 10px;
+    font-size: 12px;
+    display: none;
+}
+#errorprov{
+    color:red;
+    font-size: 12px;
     display: none;
 }

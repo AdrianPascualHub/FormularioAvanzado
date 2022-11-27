@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-*{
+
+*{    
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
@@ -11,7 +12,7 @@
 
 .container{
     min-height: 100vh;
-    background: #eee;
+    background: rgb(82, 0, 78);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +21,7 @@
 }
 
 .container form{
-    background: #fff;
+    background: rgb(165, 0, 157);
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
     padding: 20px;

@@ -1,0 +1,35 @@
+body{
+    background: rgb(82, 0, 78);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.he{    
+    color: rgb(217, 255, 0);
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+.as {
+    color: rgb(255, 255, 255);
+    width: 25%;
+    padding: 20px;
+    float: left;
+    padding-left: 100px;
+    
+}
+.datos{    
+    float: right;
+    padding: 20px;
+    border:1px solid black;
+    font-size: 30px;
+    margin-right: 15%;
+    margin-top: 40px;
+}
+td{
+    color: aqua;
+    
+}
+.pago{
+    font-size: 20px;
+    color:rgb(208, 255, 0);
+}
